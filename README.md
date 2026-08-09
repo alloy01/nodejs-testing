@@ -2,7 +2,7 @@
 
 A small repository for learning and practicing **testing in Node.js** using **Jest**.
 
-## What I'm Learning
+## What to expect?
 
 * Writing unit tests
 * Jest matchers (`toBe`, `toEqual`, `toMatch`, etc.)
