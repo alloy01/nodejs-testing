@@ -1,4 +1,4 @@
-##### Testing nodeJS 
+##### nodeJS testing
 
 ## Initial configuration -
 
