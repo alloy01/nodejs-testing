@@ -1,0 +1,12 @@
+{ 
+  "name": "nodejs-testing",
+  "author": "alloy01",
+  "description": "learn nodejs_testing with tools like jest and supertest.",
+  "type": "module",
+    "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "scripts": {
+    "test": "jest --config=./configs/jest.config.js"
+  }
+}

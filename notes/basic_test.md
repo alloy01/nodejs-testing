@@ -1,36 +1,6 @@
-##### nodeJS testing
+## Writing basic tests
 
-## Initial configuration -
-
-1. Install `jest` as a dev-dependencies
-```Bash
-npm install --save-dev jest
-```
-
-2.  Add `script` in `package.json`
-```json
-"scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
-}
-```
-
-3.  Create `jest.config.js` with this
-```js
-export default {
-  testEnvironment: "node"
-};
-```
-
-4.  Make sure to have `module` in `package.json` 
-```json
-{
-	"type": "module"
-}
-```
-
-## Writing tests
-
-- #### Basic Syntax
+- #### Syntax
 ```js
 test("description", () => {
 	expect(function(x)).toBe(y);
