@@ -29,13 +29,13 @@ export default {
 ```
 
 5.  `test` file naming convention
-```json
-[name].test.js // this is the convention used by jest to find test files
+```bash
+[name].test.js // This is the convention used by jest to find test files
 ```
 
 6. Root directory ( optional )
-```json
-// if you want to have config in different file and tests in different file
+```bash
+// If you want to have config in different file and tests in different file
 -- project/
 	|
 	|-- configs/
@@ -47,7 +47,7 @@ export default {
 	|	|-- basic.test.js  
 	|
 	
-// then configure the root directory in jest.config.js
+// Then configure the root directory in jest.config.js
 
 export default {
     rootDir: "..",
