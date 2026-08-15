@@ -13,7 +13,10 @@ test("description", () => {
 ```
 suppose there's a function that returns a promise to be resolved and `jest` will wait for the promise to be resolved
 
-Try this yourself, with https://jsonplaceholder.typicode.com/
+Try this yourself, with
+https://jsonplaceholder.typicode.com/
+or
+https://fakestoreapi.com/
 
 - #### Async / await
 ```js
