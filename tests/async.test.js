@@ -1,12 +1,12 @@
 // With the help promises + callbacks
-const fetchData1 = (url) => {
+const fetchData1 = async (url) => {
     return fetch(url).then(response => response.json())
     .then(data => {
         return data
     });
 }
 
-test("fetches data from api through method 1.", () => {
+test("fetches data from api through method 1.", async () => {
     return fetchData1("https://jsonplaceholder.typicode.com/todos/1").then(data => {
         expect(data).toEqual({
             "userId": 1,
