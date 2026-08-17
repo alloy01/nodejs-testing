@@ -2,10 +2,10 @@
 const add_num = (x, y) => {
     return x + y;
 }
-
 test("adds a + b to the value.", () => {
     expect(add_num(3, 5)).toBe(8);
 });
+
 
 
 
@@ -22,14 +22,24 @@ test("The shopping list has milk on it", () => {
 
 
 
-// Throwing a error
+
+// Throwing errors
 const divide = (a, b) => {
 	if(b === 0){
-		throw new Error("Cannot divide by zero"); 
+		throw new mathError("Cannot divide by zero"); 
 	} 
 	
 	return a / b; 
 }
-test("throws when dividing by zero", () => {
+// Generic error
+test("throw generic error when dividing by zero", () => {
+	expect(() => divide(10, 0)).toThrow();
+});
+// Particular message 
+test("throw error with a particular message when dividing by zero", () => {
 	expect(() => divide(10, 0)).toThrow("Cannot divide by zero"); 
+});
+// Particular 'type' of error message
+test("throw error with a particular type", () => {
+	expect(() => divide(10, 0)).toThrowError(mathError);
 });

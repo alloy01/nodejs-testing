@@ -114,6 +114,6 @@ function divide(a, b){
 }
 
 test("throws when dividing by zero", () => {
-	 expect(() => divide(10, 0)).toThrow(MathError); 
+	 expect(() => divide(10, 0)).toThrowError(MathError); 
 });
 ```
