@@ -105,6 +105,9 @@ test("throws when dividing by zero", () => {
 ```js
 // To just check for a particular error type
 
+// Make sure to add this, this will help create a new error class
+class MathError extends Error {} // Allows custom error types
+
 function divide(a, b){
 	if(b === 0){
 		throw new MathError("Cannot divide by zero"); 
@@ -114,6 +117,6 @@ function divide(a, b){
 }
 
 test("throws when dividing by zero", () => {
-	 expect(() => divide(10, 0)).toThrowError(MathError); 
+	 expect(() => divide(10, 0)).toThrow(MathError); 
 });
 ```

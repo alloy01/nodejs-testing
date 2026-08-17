@@ -24,9 +24,10 @@ test("The shopping list has milk on it", () => {
 
 
 // Throwing errors
+class MathError extends Error {} // Allows custom error types
 const divide = (a, b) => {
 	if(b === 0){
-		throw new mathError("Cannot divide by zero"); 
+		throw new MathError("Cannot divide by zero"); 
 	} 
 	
 	return a / b; 
@@ -40,6 +41,6 @@ test("throw error with a particular message when dividing by zero", () => {
 	expect(() => divide(10, 0)).toThrow("Cannot divide by zero"); 
 });
 // Particular 'type' of error message
-test("throw error with a particular type", () => {
-	expect(() => divide(10, 0)).toThrowError(mathError);
+test("throw error with a particular type when dividing by zero", () => {
+	expect(() => divide(10, 0)).toThrow(MathError);
 });
