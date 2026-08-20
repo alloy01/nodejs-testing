@@ -120,3 +120,14 @@ test("throws when dividing by zero", () => {
 	 expect(() => divide(10, 0)).toThrow(MathError); 
 });
 ```
+
+### General Advice
+
+- When you need to just run only one test then,
+```js
+// .only tells jest to run only this particular test in that particular test suite and other tests in that suite will be skipped
+
+test.only("description", () => {
+	expect(onlyFunction).toEqual(x);
+});
+```
