@@ -10,6 +10,11 @@ npm install --save-dev jest
 
 npm install --save-dev ts-jest
 npm install --save-dev @types/jest
+
+# As of Sept 01 2026 ts-jest is only supported for TypeScript 6.0
+
+npm uninstall typescript
+npm install --save-dev typescript@6.0
 ```
 
 2.  Add `script` in `package.json`
@@ -24,6 +29,14 @@ npm install --save-dev @types/jest
 export default {
   testEnvironment: "node"
 };
+```
+
+```bash
+# If using TypeScript run
+
+npx ts-jest config:init
+
+# This will create a jest.config.js file, you can modify RootDir too
 ```
 
 4.  Make sure to have `module` in `package.json` 
