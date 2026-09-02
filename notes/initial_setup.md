@@ -5,6 +5,11 @@
 1. Install `jest` as a dev-dependencies
 ```Bash
 npm install --save-dev jest
+
+# If you want to use TypeScript
+
+npm install --save-dev ts-jest
+npm install --save-dev @types/jest
 ```
 
 2.  Add `script` in `package.json`
@@ -30,12 +35,12 @@ export default {
 
 5.  `test` file naming convention
 ```bash
-[name].test.js // This is the convention used by jest to find test files
+[name].test.js # This is the convention used by jest to find test files
 ```
 
 6. Root directory ( optional )
 ```bash
-// If you want to have config in different file and tests in different file
+# If you want to have config in different file and tests in different file
 -- project/
 	|
 	|-- configs/
@@ -47,7 +52,7 @@ export default {
 	|	|-- basic.test.js  
 	|
 	
-// Then configure the root directory in jest.config.js
+# Then configure the root directory in jest.config.js
 
 export default {
     rootDir: "..",
