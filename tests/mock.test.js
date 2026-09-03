@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals"
 // Mocking
 
 // Suppose this function sends an email to the user

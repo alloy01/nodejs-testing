@@ -1,12 +1,16 @@
-{ 
-  "name": "nodejs-testing",
-  "author": "alloy01",
-  "description": "learn nodejs_testing with tools like jest and supertest.",
-  "type": "module",
+{
+    "name": "nodejs-testing",
+    "author": "alloy01",
+    "description": "learn nodejs_testing with tools like jest and supertest.",
+    "type": "module",
     "devDependencies": {
-    "jest": "^30.4.2"
-  },
-  "scripts": {
-    "test": "jest --config=./configs/jest.config.js"
-  }
+        "jest": "^30.4.2",
+        "supertest": "^7.2.2"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    }
 }

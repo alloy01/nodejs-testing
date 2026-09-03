@@ -24,7 +24,7 @@ npm install --save-dev typescript@6.0
 2.  Add `script` in `package.json`
 ```json
 "scripts": {
-    "test": "jest --config=./configs/jest.config.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
 }
 ```
 
