@@ -22,7 +22,7 @@ const payment = jest.fn();
 ```js
 // Now we know that the payment is a 'mock' function we can also know what parameters, values, payload has been passed through it
 
-payement("user#632", 99);
+payment("user#632", 99);
 // Tells us that payment of 99 was done by user#632, and now if there are number of these results then?
 
 // Mock functions have inbuilt methods to know parameters passed
