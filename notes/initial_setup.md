@@ -2,9 +2,13 @@
 
 ## Configuration -
 
-1. Install `jest` as a dev-dependencies
+1. Install `jest` & `supertest` as a dev-dependencies
 ```Bash
 npm install --save-dev jest
+# Install jest as a testing framework 
+
+npm install --save-dev supertest
+# Install supertest to test api endpoints
 
 # If you want to use TypeScript
 
@@ -77,4 +81,8 @@ export default {
 ```bash
 npm test
 ```
+
+## NOTE:
+
+We cannot run tests written in `Supertest` alone we would need a framework, here we are using `Jest`
 
