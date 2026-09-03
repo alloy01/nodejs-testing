@@ -10,7 +10,7 @@ describe('GET /api/users', () => {
 	
 	// it/test is used to write a single test whereas describe can be used to make a group of many tests
 	it("Gets the data of the user from api", async () => {
-		const respomse = await request(app).get('/api/users');
+		const response = await request(app).get('/api/users');
 		
 		expect(response.status).toBe(200);
 		expect(response.body).toEqual({
@@ -23,10 +23,9 @@ describe('GET /api/users', () => {
 - #### POST / PATCH / PUT
 ```js
 describe('POST /api/add_user', () => {
-	
-	// it/test is used to write a single test whereas describe can be used to make a group of many tests
-	it("Gets the data of the user from api", async () => {
-		const respomse = await request(app).post('/api/add_user').send({
+
+	it("Add a user to the database", async () => {
+		const response = await request(app).post('/api/add_user').send({
 			message: "Something here."
 		});
 		
@@ -42,9 +41,8 @@ describe('POST /api/add_user', () => {
 ```js
 describe('DELETE /api/delete_user', () => {
 	
-	// it/test is used to write a single test whereas describe can be used to make a group of many tests
-	it("Gets the data of the user from api", async () => {
-		const respomse = await request(app).delete('/api/delete_user')
+	it("Deletes the user data from database", async () => {
+		const response = await request(app).delete('/api/delete_user')
 		
 		expect(response.status).toBe(200);
 		expect(response.body).toEqual({
