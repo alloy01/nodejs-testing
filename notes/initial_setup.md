@@ -8,6 +8,7 @@ npm install --save-dev jest
 # Install jest as a testing framework 
 
 npm install --save-dev supertest
+npm install --save-dev @types/supertest
 # Install supertest to test api endpoints
 
 # If you want to use TypeScript

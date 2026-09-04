@@ -3,6 +3,8 @@
 
 - #### GET
 ```js
+// You might also need to import jest features from modules
+import { describe, it, except } from "@jest/globals";
 import request from "supertest";
 import app from "../src/app"; // Express application instance
 
